@@ -15,9 +15,9 @@
 </head>
 <body>
     <div id="app">
-        <topo logo-title="{{ config('app.name', 'Laravel') }}" url-logo="{{ url('/') }}">
+        <topo titulo="{{ config('app.name', 'Laravel') }}" url="{{ url('/') }}">
         <!-- Authentication Links -->
-        @guest
+                        @guest
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else

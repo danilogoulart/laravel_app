@@ -12,8 +12,8 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" v-bind:href="url-logo">
-                        {{ logo-title }}
+                    <a class="navbar-brand" v-bind:href="url">
+                        {{ titulo }}
                     </a>
                 </div>
 
@@ -34,6 +34,6 @@
 
 <script>
     export default {
-        props:['logo-title','url-logo']
+        props:['titulo','url']
     }
 </script>
