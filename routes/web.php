@@ -12,8 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('lead');
 });
+
+Route::post('/create/lead','LeadController@create');
 
 Auth::routes();
 
